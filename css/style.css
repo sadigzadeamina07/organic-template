@@ -10,10 +10,24 @@ body{
 .bg-darkgreen{background: rgb(54, 65, 39);}
 .bg-lightgreen{background: var(--aciqyasil);}
 .bg-lightorange{background: #f95f09;}
+.app {
+  background-color:rgb(255, 193, 7);
+
+}
+
+
 .txt-lightgreen{color: var(--aciqyasil);}
 /* background images */
 .head {
-  background: url(../img/banner-1.jpg) center/cover no-repeat;
+  background-image: url('../img/banner-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.form-sec{
+  background: url('../img/banner-newsletter.jpg') center/cover;
+  min-height: 300px;
 }
 /* buttons */
 .card-img-overlay button{
@@ -114,6 +128,7 @@ right:3%;
 .firstslider{
 position: relative;
 }
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: var(--aciqyasil);
@@ -151,6 +166,7 @@ width: 40%;
   opacity: 1;
 
 }
+
 .grid-part {
 display: flex;
 flex-wrap: wrap;
@@ -196,7 +212,7 @@ flex-wrap: wrap;
 
 .swiper-button-prev{
   position: absolute;
-right:10%;
+right:7%;
 
 }
 .firstslider .btn{
@@ -227,6 +243,21 @@ right:3%;
   
   .banner3 {
     grid-area: 2 / 2 / 2 / span  2;
+  }
+  .best-selling-product  .card-img-top{
+    width:70%;
+  
+  }
+  .best-selling-product  .thumb1{
+    width:52%;
+  
+  }
+  .best-selling-product  .thumb3{
+    width:60%;
+  
+  }
+  .best-selling-product .thumb7{
+    width:65%;
   }
 
 }
