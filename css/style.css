@@ -7,9 +7,9 @@ body{
     --aciqnarinci:#f7a422;
 }
 /* colors */
-.bg-darkgreen{background: rgb(54, 65, 39);}
-.bg-lightgreen{background: var(--aciqyasil);}
-.bg-lightorange{background: #f95f09;}
+.bg-darkgreen{background: rgb(54, 65, 39) !important;}
+.bg-lightgreen{background: var(--aciqyasil)!important;}
+.bg-lightorange{background: #f95f09!important;}
 .app {
   background-color:rgb(255, 193, 7);
 
@@ -59,7 +59,7 @@ main h1{
 .form-control i{
   display: flex;
 }
-.butonof2 button{
+.butonof2 .btn{
 padding:10px 25px;
   font-size: 20px;
   border-radius: 40px;
@@ -165,8 +165,10 @@ width: 40%;
   background: var(--aciqyasil);
   border:none;
 }
-.overlay .btn:hover{
-background: var(--aciqnarinci);
+.overlay .btn:hover,
+.firstslider .btn:hover,
+.head .btn:hover{
+background: var(--aciqnarinci)!important;
 
 }
 /* Hover effekti */
