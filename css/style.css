@@ -71,6 +71,7 @@ padding:10px 25px;
   overflow-x: hidden !important;
   padding: 20px 0;
 }
+
 .swiper-wrapper {
   display: flex;
 }
@@ -160,7 +161,14 @@ position: relative;
 .best-selling-product img {
 width: 40%;
 }
+.overlay .add-cart,.overlay .buton2{
+  background: var(--aciqyasil);
+  border:none;
+}
+.overlay .btn:hover{
+background: var(--aciqnarinci);
 
+}
 /* Hover effekti */
 .best-selling-product .card:hover .overlay {
   opacity: 1;
