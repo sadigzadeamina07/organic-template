@@ -53,12 +53,15 @@ header .catagory-bar {
   z-index:100;
   left:0;
   top:0;
-  width:50%;
+  width:45%;
   height:100%;
 
 
 }
+header .catagory-bar .nav-item{
+border:1px dashed #d6d1d1;
 
+}
 /* First section */
 .head .card-group i{
   font-size: 60px;
@@ -171,6 +174,10 @@ position: relative;
 .best-selling-product .overlay .form-control{
   width:20%;
 }
+.best-selling-product .card{
+  width:55%;
+  margin:auto;
+}
 .best-selling-product img {
 width: 40%;
 }
@@ -220,8 +227,9 @@ flex-wrap: wrap;
 @media only screen and (min-width: 768px) {
 /* header of text */
 header .catagory-bar {
-  width:24%;
+  width:20%;
 }
+header .catagory-bar {  left: -100%; /* əvvəlcə gizli */}
   main h1{
     width:50%;
     font-size: 80px;
@@ -289,7 +297,8 @@ right:3%;
     width:65%;
   }
   .best-selling-product .card {
- 
+    width:100%;
     margin-bottom: 0;
   }
+
 }
