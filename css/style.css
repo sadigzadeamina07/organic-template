@@ -1,7 +1,7 @@
 body{
-  overflow-x: hidden; 
   background-color: #fff;
 }
+
 :root{
     --aciqyasil:#6bb252;
     --aciqnarinci:#f7a422;
@@ -82,6 +82,10 @@ padding:10px 25px;
   width: 100%;
   overflow-x: hidden !important;
   padding: 20px 0;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
 }
 
 .swiper-wrapper {
