@@ -19,20 +19,44 @@
                   <button onclick="openthebar()" class="border-0 bg-transparent" >
                     <i class="fa-solid fa-bars"></i>
                   </button>
-                  <div class="catagory-bar d-none">
-                    <i class="fa-solid fa-xmark"></i>
-                    <ul class=" ">
-                      <li><a href="">Fruits and vegetables</a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                    </ul>
+                  <div id="navmenu" class="catagory-bar ">
+      <i class="fa-solid fa-xmark" onclick="closethebar()"></i>
+                 <ul class="navbar-nav  align-items-center me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    
+                    <a class="nav-link" href="#">Fruits and vegetables</a>
+                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dairy and Eggs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Meat and Poultry</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">SeafoodSeafood</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bakery and Bread</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Canned Goods</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Frozen Foods</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pasta and Rice</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Breakfast Foods</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Snacks and Chips</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Beverages</a>
+                    </li>
+                </ul>
                   </div>
 
                   <form class="col-12 col-lg-2 d-flex" role="search">
@@ -251,7 +275,7 @@
  
             <div class="row  row-cols-1  align-items-stretch  row-cols-md-3  row-cols-lg-5 g-4">
               <div class="col py-3 ">
-                <div class="card h-100  border-0 d-flex flex-column align-items-center  ">
+                <div class="card  h-100  border-0 d-flex flex-column align-items-center  ">
                   <img src="img/product-thumb-1.png" class="card-img-top  thumb1 " alt="...">
                   <div class="card-body ">
                     <p class="card-text">Whole Wheat Sandwich Bread</p>
@@ -581,7 +605,7 @@
         
         
         <div class="container-fluid">
-          <div class="row">
+          <div class="row py-5">
             
             <div class="card-group">
               <div class="col">
@@ -636,7 +660,7 @@
     </main>
     <footer>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row py-4">
           <div class="col-lg-3 col-12">
 <img src="img/logo.svg" alt="">
           </div>
@@ -678,7 +702,7 @@
    <p class="text-secondary">Subscribe to our newsletter to get updates about our grand offers.</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-3">
           <div class="col-12 col-lg-6 ">
             <p class="text-secondary " >© 2024 Organic. All rights reserved.</p>
            
@@ -693,6 +717,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      let navmenu=document.getElementById('navmenu')
+      function openthebar(){
+navmenu.style.left='0'
+      }
+      function closethebar(){
+        navmenu.style.left='-100%'
+      }
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 8,
   spaceBetween: 10,

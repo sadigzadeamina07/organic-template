@@ -46,7 +46,18 @@ nav i {
 main h1{
   font-size: 60px;
 }
+header .catagory-bar {
+  background: white;
+  position: fixed;
+  display: block;
+  z-index:100;
+  left:0;
+  top:0;
+  width:50%;
+  height:100%;
 
+
+}
 
 /* First section */
 .head .card-group i{
@@ -208,6 +219,9 @@ flex-wrap: wrap;
 }
 @media only screen and (min-width: 768px) {
 /* header of text */
+header .catagory-bar {
+  width:24%;
+}
   main h1{
     width:50%;
     font-size: 80px;
