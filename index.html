@@ -11,17 +11,21 @@
   </head>
 <body>
     <header>
-        <div class="container-fluid bg-white">
+        <div class="container-fluid bg-white p-0 m-0">
           <div class="row align-items-center">
-            <nav class="navbar  bg-body-tertiary">
+            <nav class="navbar  bg-body-tertiary p-3">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <img src="img/logo.svg" alt=""></a>
                   <button onclick="openthebar()" class="border-0 bg-transparent" >
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars text-secondary"></i>
                   </button>
-                  <div id="navmenu" class="catagory-bar ">
-      <i class="fa-solid fa-xmark" onclick="closethebar()"></i>
+                  <div id="navmenu" class="catagory-bar p-3 ">
+                    <div class="d-flex justify-content-between ">
+                      <p>MENU</p>
+                        <i class="fa-solid fa-xmark " onclick="closethebar()"></i>
+                      </div>
+
                  <ul class="navbar-nav   me-auto mb-2 mb-lg-0">
                   <li class="nav-item d-flex">
                     <i class="fa-regular fa-lemon d-flex align-items-center"></i>
@@ -82,12 +86,12 @@
                       <div class="col-lg-2 col-12">
                         <div class="row  ">
                           <ul class="navbar-nav  align-items-center me-auto mb-2 mb-lg-0">
-                            <div class="d-flex">
+                            <div class="d-flex  gap-3">
                               <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                               </li>
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Pages
                                 </a>
                               </li> 
@@ -112,7 +116,7 @@
     </header>
     <main>
       <section class="head p-0 m-0">
-        <div class="container-fluid  pt-5 ">
+        <div class="container-fluid  pt-5 px-4 ">
           <div class="card  mt-5 border-0 bg-transparent">
 
                 <h1 class="card-title "><span class="txt-lightgreen">Organic</span> Foods at your <b>Doorsteps</b> </h1>
@@ -508,7 +512,7 @@
         <div class="container-fluid   p-0 m-0">
           <section class="grid-part ">
        
-            <div class="banner1  mb-3 text-white   px-5 d-flex align-items-center ">
+            <div class="banner1  w-100 mb-3 text-white   px-5 d-flex align-items-center ">
               <div class="row  ">
                 <div class="col">
                   <h3>Items on SALE</h3>
@@ -518,7 +522,7 @@
               </div>
                    </div>
                    
-            <div class="banner2 text-white  mb-3 px-5 d-flex align-items-center">
+            <div class="banner2  w-100 text-white  mb-3 px-5 d-flex align-items-center">
               <div class="row">
                 <h3>Combo offers</h3>
                 <p>Discounts up to 50%</p>
@@ -526,7 +530,7 @@
               </div>
          
             </div>
-            <div class="banner3  text-white  px-5 d-flex align-items-center">
+            <div class="banner3 w-100  text-white  px-5 d-flex align-items-center">
               <div class="row">
                 <h3>Discount Coupons </h3>
                 <p>Discounts up to 40% </p>
@@ -537,26 +541,22 @@
           </section>
         </div>
             
-        <section class="">
+        <section class="getdiscount">
           <div class="container-fluid  p-0 m-0" >
             <div class="card bg-dark text-white  form-sec  d-flex align-items-center  justify-content-center">
                 
               <div class="row">
-                  <div class="col-lg-5">
+                  <div class="col-lg-6 col-12">
                     <h2 class="card-title">Get 25% Discount on your first purchase</h2>
                     <p class="card-text">Just Sign Up & Register it now to become member.</p>
                    
                   </div>
-                  <div class="col-lg-5">
-                    <form>
-                      <div class="form-group ">
-                            <input type="text" class="w-100">
-                            <input type="text"  class="w-100">  
-                            <button  class="w-100 bg-dark text-white border-0">Submit</button> 
+                  <div class="col-lg-6 col-12">
+                      <div class="form-group   d-flex mx-auto flex-column gap-2">
+                            <input type="text" >
+                            <input type="text"  >  
+                            <button type="submit" class="bg-dark text-white border-0">Submit</button> 
                            </div>
-                 
-                    
-                    </form>
                   </div>
                 </div>
                  
@@ -746,7 +746,7 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 60,
       slidesPerGroup: 2,
     },
-    576: { slidesPerView: 3, spaceBetween:40 }, // tablet
+    576: { slidesPerView: 3, spaceBetween:40 },
     768: { slidesPerView: 4,  },
     992: { slidesPerView: 6,},
     1200: { slidesPerView: 8,  },
@@ -765,7 +765,7 @@ const mySwiper2 = new Swiper(".mySwiper2", {
       spaceBetween: 60,
       slidesPerGroup: 1,
     },
-    576: { slidesPerView: 1, }, // tablet
+    576: { slidesPerView: 1, }, 
     768: { slidesPerView: 4,  },
     992: { slidesPerView: 5,},
     1200: { slidesPerView: 6,  },

@@ -1,6 +1,6 @@
 body{
-  overflow-x: hidden;
-    color: #fff;
+  overflow-x: hidden; 
+  background-color: #fff;
 }
 :root{
     --aciqyasil:#6bb252;
@@ -51,15 +51,13 @@ header .catagory-bar {
   position: fixed;
   display: block;
   z-index:100;
-  left:0;
+  left:-100%;
   top:0;
   width:45%;
   height:100%;
-
-
 }
 header .catagory-bar .nav-item{
-border:1px dashed #d6d1d1;
+border-bottom:1px dashed #d6d1d1;
 
 }
 /* First section */
@@ -175,7 +173,7 @@ position: relative;
   width:20%;
 }
 .best-selling-product .card{
-  width:55%;
+  width:79%;
   margin:auto;
 }
 .best-selling-product img {
@@ -224,12 +222,14 @@ flex-wrap: wrap;
 .best-selling-product .overlay button {
   pointer-events: auto;
 }
+.getdiscount .form-group  {
+  width: 60% !important;
+}
 @media only screen and (min-width: 768px) {
 /* header of text */
 header .catagory-bar {
   width:20%;
 }
-header .catagory-bar {  left: -100%; /* əvvəlcə gizli */}
   main h1{
     width:50%;
     font-size: 80px;
@@ -300,5 +300,7 @@ right:3%;
     width:100%;
     margin-bottom: 0;
   }
-
+  .getdiscount .form-group  {
+    width: 100% !important;
+  }
 }
