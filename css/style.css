@@ -21,7 +21,6 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .form-sec{
   background: url('../img/banner-newsletter.jpg') center/cover;
@@ -89,7 +88,7 @@ html, body {
 .swiper-wrapper {
   display: flex;
 }
-.swiper-slide {
+.swiper-slide{
   display: flex;
   justify-content: center;
 }
@@ -112,7 +111,7 @@ html, body {
 
 /* Swiper düymələrinin dizaynı */
 .swiper-button-next,
-.swiper-button-prev{
+ .swiper-button-prev{
   position: absolute;
   top:8%;
   transform: translateY(-50%);
@@ -140,10 +139,19 @@ transform: translateY(-50%);
 right:3%;
 
 }
-.firstslider{
+.firstslider,.secondslider{
 position: relative;
 }
-
+.secondslider .card {
+  position: relative;
+  text-align: center;
+  width: 230px;
+  border: none;
+  transition: 0.3s ease;
+}
+.secondslider .card:hover {
+  box-shadow: 0 0 20px #ccc;
+}
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: var(--aciqyasil);
@@ -156,7 +164,7 @@ position: relative;
   margin-bottom: 70px!important;
 }
 
-.best-selling-product .overlay {
+.best-selling-product .overlay,.secondslider .overlay  {
   position: absolute;
   bottom:-40%;
   left: 0;
@@ -190,6 +198,10 @@ width: 40%;
 .head .btn:hover{
 background: var(--aciqnarinci)!important;
 
+}
+.secondslider .card:hover .overlay {
+  opacity: 1;
+  bottom: 0;
 }
 /* Hover effekti */
 .best-selling-product .card:hover .overlay {
@@ -287,15 +299,15 @@ right:3%;
     width:70%;
   
   }
-  .best-selling-product  .thumb1{
+ .thumb1{
     width:52%;
   
   }
-  .best-selling-product  .thumb3{
+  .thumb3{
     width:60%;
   
   }
-  .best-selling-product .thumb7{
+ .thumb7{
     width:65%;
   }
   .best-selling-product .card {
