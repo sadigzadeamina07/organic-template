@@ -561,7 +561,7 @@
                   <div class="swiper-wrapper">
                      
                         <div class="swiper-slide ">
-                          <div class="card py-5  border-0 d-flex align-items-center  ">
+                          <div class="card py-2  border-0 d-flex align-items-center  ">
                             <img src="img/product-thumb-10.png" class="card-img-top thumb1 " alt="...">
                             <div class="card-body ">
                               <p class="card-text">Whole Wheat Sandwich Bread</p>
@@ -583,7 +583,7 @@
            
                     </div>
                     <div class="swiper-slide ">
-                      <div class="card  pt-5 d-flex align-items-center  border-0">
+                      <div class="card  pt-2 d-flex align-items-center  border-0">
                         <img src="img/product-thumb-11.png" class="card-img-top    " alt="...">
                         <div class="card-body">
                           <p class="card-title">Sharp Cheddar Cheese Block</p>
@@ -605,7 +605,7 @@
                       </div>
                     </div>
                     <div class="swiper-slide ">
-                      <div class="card  pt-5   d-flex align-items-center border-0">
+                      <div class="card  pt-2   d-flex align-items-center border-0">
                         <img src="img/product-thumb-12.png" class="card-img-top  thumb3  " alt="...">
                         <div class="card-body py-5">
                           <p class="card-title">Sharp Cheddar Cheese Block</p>
@@ -626,7 +626,7 @@
                       </div>
                     </div>
                     <div class="swiper-slide ">
-                      <div class="card  pt-5  d-flex align-items-center  border-0">
+                      <div class="card  pt-2  d-flex align-items-center  border-0">
                         <img src="img/product-thumb-13.png" class="card-img-top " alt="...">
                         <div class="card-body py-5">
                           <p class="card-title">Organic Baby Spinach</p>
@@ -648,7 +648,7 @@
 
                     </div>
                     <div class="swiper-slide ">
-                      <div class="card pt-5   border-0 d-flex  align-items-center justify-content-between">
+                      <div class="card pt-2   border-0 d-flex  align-items-center justify-content-between">
                         <img src="img/product-thumb-14.png" class="card-img-top  thumb5  " alt="...">
                         <div class="card-body flex-column">
                           <p class="card-text">Whole Wheat Sandwich Bread</p>
@@ -671,7 +671,7 @@
                     </div>
    
                     <div class="swiper-slide ">
-                      <div class="card  pt-5  py-4 h-100  border-0 d-flex align-items-center justify-content-between">
+                      <div class="card  pt-2  py-4 h-100  border-0 d-flex align-items-center justify-content-between">
                         <img src="img/product-thumb-15.png" class="card-img-top " alt="...">
                         <div class="card-body flex-column">
                           <p class="card-text">Whole Wheat Sandwich Bread</p>
@@ -693,7 +693,7 @@
                    
                     </div>
                        <div class="swiper-slide">
-                        <div class="card  pt-5  d-flex align-items-center  border-0  align-items-center justify-content-between">
+                        <div class="card  pt-2  d-flex align-items-center  border-0  align-items-center justify-content-between">
                           <img src="img/product-thumb-16.png" class="card-img-top  h-75 w-75  thumb7" alt="...">
                           <div class="card-body">
                             <p class="card-title">Sharp Cheddar Cheese Block</p>
@@ -717,7 +717,7 @@
                  
                        <div class="swiper-slide">
 
-                        <div class="card   py-5  d-flex align-items-center border-0">
+                        <div class="card   py-2  d-flex align-items-center border-0">
                           <img src="img/product-thumb-17.png" class="card-img-top thumb8 " alt="...">
                           <div class="card-body">
                             <p class="card-title">Sharp Cheddar Cheese Block</p>
@@ -738,7 +738,7 @@
                         </div>
                        </div>
                        <div class="swiper-slide">
-                        <div class="card py-5 d-flex align-items-center  border-0">
+                        <div class="card py-2  d-flex align-items-center  border-0">
                           <img src="img/product-thumb-18.png" class="card-img-top   h-75 w-75 " alt="...">
                           <div class="card-body">
                             <p class="card-title">Organic Baby Spinach</p>
@@ -843,8 +843,8 @@
         <div class="container-fluid">
           <div class="row py-5">
             
-            <div class="card-group">
-              <div class="col">
+            <div class="card-group gap-3">
+              <div class="col ">
                 <div class="card">
                   <div class="card-body">
                     <i class="fa-solid fa-truck-fast text-secondary"></i>
@@ -980,22 +980,22 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 const swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    576: { slidesPerView: 1 },
-    768: { slidesPerView: 5 },
-    1200: { slidesPerView: 5 }
-  }
+    0: { slidesPerView: 1 },    
+    576: { slidesPerView: 2 }, 
+    768: { slidesPerView: 3 },   
+    992: { slidesPerView: 4 },    
+    1200: { slidesPerView: 5 }     // Desktop
+  },
 });
+
+
+
     </script>
     
 </body>
