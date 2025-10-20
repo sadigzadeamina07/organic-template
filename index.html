@@ -649,7 +649,7 @@
                     </div>
                     <div class="swiper-slide ">
                       <div class="card pt-2   border-0 d-flex  align-items-center justify-content-between">
-                        <img src="img/product-thumb-14.png" class="card-img-top  thumb5  " alt="...">
+                        <img src="img/product-thumb-14.png" class="card-img-top  " alt="...">
                         <div class="card-body flex-column">
                           <p class="card-text">Whole Wheat Sandwich Bread</p>
                         <div class="stars text-warning">
@@ -694,7 +694,7 @@
                     </div>
                        <div class="swiper-slide">
                         <div class="card  pt-2  d-flex align-items-center  border-0  align-items-center justify-content-between">
-                          <img src="img/product-thumb-16.png" class="card-img-top  h-75 w-75  thumb7" alt="...">
+                          <img src="img/product-thumb-16.png" class="card-img-top " alt="...">
                           <div class="card-body">
                             <p class="card-title">Sharp Cheddar Cheese Block</p>
                             <div class="stars text-warning">
@@ -718,7 +718,7 @@
                        <div class="swiper-slide">
 
                         <div class="card   py-2  d-flex align-items-center border-0">
-                          <img src="img/product-thumb-17.png" class="card-img-top thumb8 " alt="...">
+                          <img src="img/product-thumb-17.png" class="card-img-top " alt="...">
                           <div class="card-body">
                             <p class="card-title">Sharp Cheddar Cheese Block</p>
                             <div class="stars text-warning">
@@ -739,7 +739,7 @@
                        </div>
                        <div class="swiper-slide">
                         <div class="card py-2  d-flex align-items-center  border-0">
-                          <img src="img/product-thumb-18.png" class="card-img-top   h-75 w-75 " alt="...">
+                          <img src="img/product-thumb-18.png" class="card-img-top " alt="...">
                           <div class="card-body">
                             <p class="card-title">Organic Baby Spinach</p>
                                <div class="stars text-warning">
@@ -980,20 +980,19 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 const swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1, // default mobil üçün
   spaceBetween: 20,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    0: { slidesPerView: 1 },    
-    576: { slidesPerView: 2 }, 
-    768: { slidesPerView: 3 },   
-    992: { slidesPerView: 4 },    
-    1200: { slidesPerView: 5 }     // Desktop
+    576: { slidesPerView: 1 },   
+    768: { slidesPerView: 2 },  
+    992: { slidesPerView: 4 }, 
+    1200: { slidesPerView: 5 } 
   },
 });
-
 
 
     </script>
