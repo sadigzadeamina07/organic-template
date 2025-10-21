@@ -139,12 +139,12 @@ html, body {
 .secondslider {
   position: relative;
 }
-
 .secondslider .swiper {
   width: 100%;
   overflow: hidden;
 }
 .secondslider .card {
+  margin: 50px;
  width:90vw;
 }
  .secondslider .card img {
@@ -153,7 +153,7 @@ html, body {
 .secondslider .buton {
   position: absolute;
   right: 25%;
-  top: 11%;
+  top: 9%;
   background: var(--aciqyasil) !important;
   transform: translateY(-50%);
 }
@@ -161,7 +161,7 @@ html, body {
 .secondslider .swiper-button-next,
 .secondslider .swiper-button-prev {
   position: absolute;
-  top: 11%;
+  top:9%;
 }
 
 .secondslider .overlay .btn {
@@ -230,7 +230,6 @@ html, body {
 .best-selling-product .card:hover {
   box-shadow: 0 0 20px #c8c7c7;
 }
-
 .grid-part {
   display: grid;
   grid-template-columns: 1fr;
