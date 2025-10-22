@@ -148,7 +148,11 @@ html, body {
 }
  .secondslider .card img {
  width:70% !important;
+
   }
+  
+.thumb-17{
+  height:150px !important;}
 .secondslider .buton {
   position: absolute;
   right: 25%;
@@ -295,7 +299,6 @@ html, body {
   .secondslider .card-img-top {
     width: 70%;
   }
-
   .thumb1 { width: 52%; }
   .thumb3 { width: 60%; }
   .thumb7 { width: 65%; }
